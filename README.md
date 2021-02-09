@@ -9,13 +9,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist tomlutzenberger/yii2-responsive-image "*"
+php composer.phar require --prefer-dist ostendisorg/yii2-responsive-image "*"
 ```
 
 or add
 
 ```
-"tomlutzenberger/yii2-responsive-image": "*"
+"ostendisorg/yii2-responsive-image": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -30,7 +30,7 @@ Once the extension is installed, add the component to your `web.php`:
     'components' => [
         // ...
         'responsiveImage' => [
-            'class'   => 'TomLutzenberger\ResponsiveImage\components\ResponsiveImage',
+            'class'   => 'ostendisorg\ResponsiveImage\components\ResponsiveImage',
             'presets' => [
                 // Your presets here
             ],
@@ -91,7 +91,7 @@ Just set the source image and the presets you want to use.
 * Path of the source image need to match `srcPath` of the preset
 
 ```php
-<?= TomLutzenberger\ResponsiveImage\widgets\Picture::widget([
+<?= ostendisorg\ResponsiveImage\widgets\Picture::widget([
     'image'   => '@web/image/content/my-image.jpg',
     'presets' => [
         'content-xs',
@@ -124,7 +124,7 @@ Additionally, to be able to call the command, define the controller in the contr
     'controllerMap'       => [
         // ...
         'image' => [
-            'class' => 'TomLutzenberger\ResponsiveImage\commands\ImageController',
+            'class' => 'ostendisorg\ResponsiveImage\commands\ImageController',
         ],
     ],
 ```
@@ -136,3 +136,8 @@ Also, you need to define the aliases `@web` and `@webroot` in the `yii` file:
     Yii::setAlias('@webroot', __DIR__ . '/web');
     Yii::setAlias('@web', '/');
 ```
+
+License
+-----
+This package is published under the MIT License and can be used for any 
+commercial and personal projects.

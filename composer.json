@@ -1,5 +1,5 @@
 {
-  "name": "tomlutzenberger/yii2-responsive-image",
+  "name": "ostendisorg/yii2-responsive-image",
   "description": "Create thumbnails with custom presets and use them in responsive widgets",
   "type": "yii2-extension",
   "keywords": [
@@ -11,6 +11,10 @@
   ],
   "license": "MIT",
   "authors": [
+    {
+      "name": "Daniel Nüssli",
+      "email": "daniel.nuessli@ostendis.com"
+    },
     {
       "name": "Tom Lutzenberger",
       "email": "lutzenbergerthomas@gmail.com"
@@ -27,7 +31,7 @@
   },
   "autoload": {
     "psr-4": {
-      "TomLutzenberger\\ResponsiveImage\\": "src"
+      "ostendisorg\\responsiveimage\\": "src"
     }
   }
 }
