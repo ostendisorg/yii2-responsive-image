@@ -1,10 +1,10 @@
 <?php
 
-namespace TomLutzenberger\ResponsiveImage\commands;
+namespace ostendisorg\ResponsiveImage\commands;
 
 use Symfony\Component\Console\Helper\ProgressBar;
 use Symfony\Component\Console\Output\ConsoleOutput;
-use TomLutzenberger\ResponsiveImage\components\ResponsiveImage;
+use ostendisorg\ResponsiveImage\components\ResponsiveImage;
 use Yii;
 use yii\base\ErrorException;
 use yii\console\Controller;
@@ -14,8 +14,8 @@ use yii\helpers\FileHelper;
 /**
  * Class ImageController
  *
- * @package   TomLutzenberger\ResponsiveImage\commands
- * @copyright 2019 Tom Lutzenberger
+ * @package   ostendisorg\ResponsiveImage\commands
+ * @copyright 2021 Ostendis AG
  * @author    Tom Lutzenberger <lutzenbergertom@gmail.com>
  */
 class ImageController extends Controller

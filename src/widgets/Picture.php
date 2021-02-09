@@ -1,7 +1,7 @@
 <?php
 
 
-namespace TomLutzenberger\ResponsiveImage\widgets;
+namespace ostendisorg\ResponsiveImage\widgets;
 
 
 use Yii;
@@ -11,8 +11,8 @@ use yii\helpers\Html;
 /**
  * Class Picture
  *
- * @package   TomLutzenberger\ResponsiveImage\widgets
- * @copyright 2019 Tom Lutzenberger
+ * @package   ostendisorg\ResponsiveImage\widgets
+ * @copyright 2021 Ostendis AG
  * @author    Tom Lutzenberger <lutzenbergertom@gmail.com>
  */
 class Picture extends Widget
@@ -43,7 +43,7 @@ class Picture extends Widget
      */
     public function run()
     {
-        /** @var \TomLutzenberger\ResponsiveImage\components\ResponsiveImage $ri */
+        /** @var \ostendisorg\ResponsiveImage\components\ResponsiveImage $ri */
         $ri = Yii::$app->responsiveImage;
         $sources = '';
 

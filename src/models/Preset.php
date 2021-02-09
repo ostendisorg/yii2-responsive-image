@@ -1,6 +1,6 @@
 <?php
 
-namespace TomLutzenberger\ResponsiveImage\models;
+namespace ostendisorg\ResponsiveImage\models;
 
 use Yii;
 use yii\base\Model;
@@ -8,7 +8,7 @@ use yii\base\Model;
 /**
  * Class Preset
  *
- * @package   TomLutzenberger\ResponsiveImage\models
+ * @package   ostendisorg\ResponsiveImage\models
  * @copyright 2019 Tom Lutzenberger
  * @author    Tom Lutzenberger <lutzenbergertom@gmail.com>
  *

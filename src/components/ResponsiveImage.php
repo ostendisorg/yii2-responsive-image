@@ -1,8 +1,8 @@
 <?php
 
-namespace TomLutzenberger\ResponsiveImage\components;
+namespace ostendisorg\ResponsiveImage\components;
 
-use TomLutzenberger\ResponsiveImage\models\Preset;
+use ostendisorg\ResponsiveImage\models\Preset;
 use Yii;
 use yii\base\Component;
 use yii\base\ErrorException;
@@ -15,8 +15,8 @@ use yii\imagine\Image;
 /**
  * Class ResponsiveImage
  *
- * @package   TomLutzenberger\ResponsiveImage\components
- * @copyright 2019 Tom Lutzenberger
+ * @package   ostendisorg\ResponsiveImage\components
+ * @copyright 2021 Ostendis AG
  * @author    Tom Lutzenberger <lutzenbergertom@gmail.com>
  */
 class ResponsiveImage extends Component
