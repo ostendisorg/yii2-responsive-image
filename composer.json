@@ -31,7 +31,7 @@
   },
   "autoload": {
     "psr-4": {
-      "ostendisorg\\responsiveimage\\": "src"
+      "ostendisorg\\ResponsiveImage\\": "src"
     }
   }
 }
