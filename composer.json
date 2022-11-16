@@ -27,11 +27,17 @@
     "symfony/console": ">=2.7 <5.0"
   },
   "require-dev": {
-    "roave/security-advisories": "dev-master"
+    "roave/security-advisories": "dev-latest",
+    "yidas/yii2-composer-bower-skip": "^2.0"
   },
   "autoload": {
     "psr-4": {
       "ostendisorg\\ResponsiveImage\\": "src"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true
     }
   }
 }
