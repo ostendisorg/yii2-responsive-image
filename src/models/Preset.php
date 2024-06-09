@@ -118,7 +118,7 @@ class Preset extends Model
         foreach ($this->getAttributes() as $name => $value) {
             $value = $value ?? '';
             $this->targetPathResolved = str_replace(
-                '{' . $name . '}',
+                "{{$name}}",
                 $value,
                 $this->targetPathResolved
             );
