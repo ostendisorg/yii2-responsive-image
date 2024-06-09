@@ -115,9 +115,9 @@ class Preset extends Model
 
         $this->targetPathResolved = empty($this->targetPath) ? Yii::$app->responsiveImage->defaultTargetPath : $this->targetPath;
 
-        foreach ($this->getAttributes() as $attrName => $attrValue) {
-            $attrValue = $attrValue ?? '';
-            $this->targetPathResolved = str_replace('{' . $attrName . '}', $attrValue, $this->targetPathResolved);
+        foreach ($this->getAttributes() as $name => $value) {
+            $value = $value ?? '';
+            $this->targetPathResolved = str_replace('{' . $name . '}', $value, $this->targetPathResolved);
         }
 
         return $this->targetPathResolved;
