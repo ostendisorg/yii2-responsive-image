@@ -89,9 +89,9 @@ class ResponsiveImage extends Component
      * Get thumbnail for given source file and preset
      * If it does not exist, it will be created.
      *
-     * @param string $file       Path of the source file
+     * @param string $file Path of the source file
      * @param string $presetName Name of the preset
-     * @param bool   $force      Force the thumbnail creation
+     * @param bool $force Force the thumbnail creation
      * @return string
      * @throws ErrorException
      */
@@ -149,7 +149,7 @@ class ResponsiveImage extends Component
      * Create preset model with given configuration
      *
      * @param string $presetName
-     * @param array  $config
+     * @param array $config
      * @return Preset
      * @throws ErrorException
      * @throws InvalidConfigException
@@ -222,15 +222,15 @@ class ResponsiveImage extends Component
             $info = pathinfo($file);
 
             $fullInfo = [
-                'width'    => $size[0],
-                'height'   => $size[1],
-                'type'     => $size[2],
-                'attr'     => $size[3],
-                'mime'     => image_type_to_mime_type($size[2]),
+                'width' => $size[0],
+                'height' => $size[1],
+                'type' => $size[2],
+                'attr' => $size[3],
+                'mime' => image_type_to_mime_type($size[2]),
                 'modified' => filemtime($file),
-                'dirname'  => $info['dirname'],
+                'dirname' => $info['dirname'],
                 'basename' => $info['basename'],
-                'ext'      => $info['extension'],
+                'ext' => $info['extension'],
                 'filename' => $info['filename'],
             ];
         }
@@ -246,7 +246,7 @@ class ResponsiveImage extends Component
      * Get absolute path for given aliased path
      *
      * @param string $path
-     * @param bool   $useRealPath
+     * @param bool $useRealPath
      * @return false|string
      */
     protected function getAbsolutePath(string $path, bool $useRealPath = true)

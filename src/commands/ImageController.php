@@ -98,9 +98,9 @@ class ImageController extends Controller
     protected function getDirFiles(string $path): array
     {
         return FileHelper::findFiles($path, [
-            'only'          => $this->imgFileExtensions,
+            'only' => $this->imgFileExtensions,
             'caseSensitive' => false,
-            'recursive'     => false,
+            'recursive' => false,
         ]);
     }
 }

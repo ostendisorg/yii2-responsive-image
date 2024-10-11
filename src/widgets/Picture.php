@@ -68,7 +68,7 @@ class Picture extends Widget
 
             $sources .= Html::tag('source', '', [
                 'srcset' => $thumbnail . ' 1x',
-                'media'  => implode(' AND ', $media),
+                'media' => implode(' AND ', $media),
             ]);
         }
 
